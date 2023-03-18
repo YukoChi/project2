@@ -283,6 +283,7 @@ body {
   display: flex;
   margin-top: 2rem;
   background-color: #222;
+  flex-wrap: wrap;
 }
 
 .contact .row .maps {
@@ -481,5 +482,4 @@ footer .creadit a {
 .paragraf h4 {
 }
 .paragraf p {
-
 }
