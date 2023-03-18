@@ -104,31 +104,6 @@ body {
   color: white;
   margin: 0 0.5rem;
 }
-/* moon theme dark or light */
-
-.white-mode .checkbox .toggle {
-  position: absolute;
-  display: block;
-  height: 40px;
-  width: 40px;
-  background-color: #2b2b2b;
-  border-radius: 50%;
-  box-shadow: inset 0 8px 60px rgba(0, 0, 0, 0.1) inset 0 8px 8px rgba(0, 0, 0, 0.1) inset 0 -4px 4px rgba(0, 0, 0, 0.1);
-  z-index: -1;
-  transition: 1s;
-  -webkit-border-radius: 50%;
-  -moz-border-radius: 50%;
-  -ms-border-radius: 50%;
-  -o-border-radius: 50%;
-  -webkit-transition: 1s;
-  -moz-transition: 1s;
-  -ms-transition: 1s;
-  -o-transition: 1s;
-}
-
-/* .white-mode .checkbox input:checked ~ .toggle {
-  background: white;
-} */
 
 /* menghilangkan navbar extra */
 #menu {
@@ -224,6 +199,7 @@ body {
 }
 .about .row .content {
   flex: 1 1 55rem;
+
   padding: 0 2rem;
 }
 .about .row .content h3 {
@@ -238,6 +214,18 @@ body {
   font-size: 1.4rem;
   font-weight: 300;
   line-height: 2;
+}
+.about .row .content a {
+  display: flex;
+  justify-content: center;
+  padding: 0.6rem 0;
+  margin: 0 8rem;
+  font-size: 1.2rem;
+
+  text-align: center;
+  background-color: white;
+  color: black;
+  margin-bottom: 2.6rem;
 }
 
 /* project section */
@@ -357,7 +345,7 @@ footer .links a:hover {
   color: var(--bg);
 }
 
-footer .links {
+/* footer .links {
   margin-bottom: 0.2rem;
   padding-top: 1rem;
 }
@@ -367,10 +355,11 @@ footer .links a {
   padding: 1rem 1rem;
   align-items: center;
   font-size: 1.2rem;
-}
+} */
 
 footer .creadit {
-  font-size: 0.8rem;
+  font-size: 1.2rem;
+  padding: 1rem;
 }
 
 footer .creadit a {
@@ -391,6 +380,9 @@ footer .creadit a {
     font-size: 62.5%;
   }
 
+  #myCv {
+    display: none;
+  }
   #menu {
     display: inline-block;
   }
@@ -399,14 +391,19 @@ footer .creadit a {
     position: absolute;
     top: 100%;
     right: -100%;
-    background-color: white;
-    width: 30rem;
+    background-color: #9999;
+    width: 22rem;
     height: 100vh;
+    border-radius: 7px;
     transition: 0.5s;
     -webkit-transition: 0.5s;
     -moz-transition: 0.5s;
     -ms-transition: 0.5s;
     -o-transition: 0.5s;
+    -webkit-border-radius: 7px;
+    -moz-border-radius: 7px;
+    -ms-border-radius: 7px;
+    -o-border-radius: 7px;
   }
 
   .navbar .navbar-nav.active {
@@ -415,22 +412,23 @@ footer .creadit a {
 
   .navbar .navbar-nav a {
     display: block;
-    color: var(--bg);
+    text-align: center;
+    color: #fff;
     margin: 1.5rem;
     padding: 0.5rem;
     font-size: 2rem;
   }
 
   .navbar .navbar-nav a::after {
-    transform-origin: 0 0;
+    transform-origin: 0 1;
   }
 
-  .navbar .navbar-nav a:hover:after {
-    transform: scaleX(0.4);
-    -webkit-transform: scaleX(0.4);
-    -moz-transform: scaleX(0.4);
-    -ms-transform: scaleX(0.4);
-    -o-transform: scaleX(0.4);
+  .navbar .navbar-nav a:hover::after {
+    transform: scaleX(0.5);
+    -webkit-transform: scaleX(0.5);
+    -moz-transform: scaleX(0.5);
+    -ms-transform: scaleX(0.5);
+    -o-transform: scaleX(0.5);
   }
 
   .about .row {
@@ -465,4 +463,23 @@ footer .creadit a {
   html {
     font-size: 55%;
   }
+}
+
+/* paragraf */
+.paragraf {
+  max-width: 40rem;
+  display: flex;
+  flex-direction: column;
+  padding: 5rem 7rem;
+  font-size: 1.4rem;
+  text-align: center;
+}
+
+.paragraf h1 {
+  padding-bottom: 2.8rem;
+}
+.paragraf h4 {
+}
+.paragraf p {
+
 }
