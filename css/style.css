@@ -133,8 +133,8 @@ body {
 }
 
 .hero .content {
-  padding: 1.4rem 7%;
-  max-width: 45rem;
+  padding: 1.4rem 10%;
+  max-width: 55rem;
 }
 
 .hero .content h1 {
@@ -190,7 +190,7 @@ body {
   display: flex;
 }
 .about .row .about-img {
-  flex: 1 1 60rem;
+  flex: 1 80rem;
   margin-top: 2.2rem;
 }
 .about .row .about-img img {
@@ -198,8 +198,9 @@ body {
   height: 100%;
 }
 .about .row .content {
-  flex: 1 1 55rem;
-
+  /* border: 50px solid black; */
+  margin: auto 1rem;
+  flex: 1 1 70rem;
   padding: 0 2rem;
 }
 .about .row .content h3 {
@@ -221,7 +222,6 @@ body {
   padding: 0.6rem 0;
   margin: 0 8rem;
   font-size: 1.2rem;
-
   text-align: center;
   background-color: white;
   color: black;
@@ -248,6 +248,7 @@ body {
   flex-wrap: wrap;
   margin-top: 5rem;
   justify-content: center;
+  line-height: normal;
 }
 
 .project .row .project-img {
@@ -278,39 +279,46 @@ body {
   line-height: 2;
   margin-top: 2rem;
 }
+.contact h2 {
+  text-align: center;
+  padding: 0 20% 1rem;
+  max-width: 80rem;
+}
+
 
 .contact .row {
   display: flex;
+  justify-content: center;
   margin-top: 2rem;
   background-color: #222;
   flex-wrap: wrap;
+  padding: 5rem;
 }
 
-.contact .row .maps {
+/* .contact .row .maps {
   flex: 1 1 30rem;
   width: 100%;
   object-fit: cover;
-}
+} */
 
 .contact .row form {
-  flex: 1 1 20rem;
-  padding: 5rem 2rem;
-  text-align: center;
+  width: 40rem;
+  margin: 2rem;
 }
 
 .contact .row form .input-group {
   display: flex;
   align-items: center;
-  margin-top: 2rem;
+  padding-left: 1rem;
+  margin-top: 0.8rem;
   background-color: var(--bg);
   border: 1px solid #eee;
-  padding-left: 2rem;
 }
 
 .contact .row form .input-group input {
   width: 100%;
-  padding: 2rem;
-  font-size: 1.4rem;
+  padding: 1rem;
+  font-size: 1.2rem;
   background: none;
   color: white;
 }
@@ -320,9 +328,13 @@ body {
   display: inline-block;
   padding: 1rem 3rem;
   font-size: 1.4rem;
-  color: white;
-  background-color: var(--purple);
+  color: black;
+  background-color:#fff;
   cursor: pointer;
+}
+
+.contact .row form .input-group .message {
+  padding-bottom: 8rem;
 }
 
 /* footer */
@@ -387,6 +399,14 @@ footer .creadit a {
   #menu {
     display: inline-block;
   }
+
+  #contact h2 {
+    font-size: 1.6rem;
+    text-align: center;
+    padding: 0 2% 1rem;
+    max-width: 80rem;
+  }
+  
 
   .navbar .navbar-nav {
     position: absolute;
