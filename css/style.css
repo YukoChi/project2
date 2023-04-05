@@ -171,10 +171,6 @@ body {
   animation-fill-mode: forwards;
   */-webkit-animation: zoom 1.4s ease-in-out alternate ;
   -webkit-animation: zoom 1.4s ease-in-out alternate forwards ;
-  -webkit-border-radius: 5%;
-  -moz-border-radius: 5%;
-  -ms-border-radius: 5%;
-  -o-border-radius: 5%;
 }
 
 
