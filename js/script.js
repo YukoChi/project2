@@ -5,21 +5,21 @@ document.querySelector("#menu").onclick = () => {
 };
 
 // click diluar sidebar untuk menghilangkan menu
-const menu = document.querySelector("#menu");
-document.addEventListener("click", function (e) {
-  if (!menu.contains(e.target) && !navbarNav.contains(e.target)) {
-    navbarNav.classList.remove("active");
-  }
-});
+// const menu = document.querySelector("#menu");
+// document.addEventListener("click", function (e) {
+//   if (!menu.contains(e.target) && !navbarNav.contains(e.target)) {
+//     navbarNav.classList.remove("active");
+//   }
+// });
 
-// toggle mode active
-if (localStorage.getItem("theme") == "dark") {
-  myFunction(true);
-}
+// // toggle mode active
+// if (localStorage.getItem("theme") == "dark") {
+//   myFunction(true);
+// }
 
-function myFunction() {
-  localStorage.setItem("theme", "dark");
-  var element = document.body;
-  element.classList.toggle("white-mode");
-}
-myFunction();
+// function myFunction() {
+//   localStorage.setItem("theme", "dark");
+//   var element = document.body;
+//   element.classList.toggle("white-mode");
+// }
+// myFunction();
